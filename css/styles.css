@@ -520,7 +520,8 @@ overflow: hidden;
 .footer-list{
   display: flex;
   align-items: baseline;
-  margin-right: 93px;
+  margin-right: auto;
+  
 }
 .logo-footer-container{
   margin-bottom: 20px;
@@ -779,7 +780,9 @@ margin-bottom: 10px;
   border-color: var(--accent-color);
 }
 .modal-contract{
+  display: flex;
   padding-bottom: 30px;
+  justify-content: center;
 }
 .check-text{
   line-height: calc(24/14);
@@ -791,7 +794,7 @@ margin-bottom: 10px;
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-color);
-  border-radius: 2px;
+  border-radius: 4px;
   margin-right: 9px;
   display: flex;
   align-items: center;
@@ -805,6 +808,10 @@ margin-bottom: 10px;
   border: none;
   fill: var(--primary-color);
 }
+.modal-check:hover + .check-text span,
+.modal-check:focus + .check-text span{
+  border: 2px solid var(--accent-color);
+}
   
 .contract{
   font-weight: 400;
@@ -813,6 +820,7 @@ margin-bottom: 10px;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
+  margin-left: 4px;
 }
 .send-button{
   position: relative;
